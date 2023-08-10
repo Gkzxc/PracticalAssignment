@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Calculate_Bill">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UserInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/NumberOfPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:hint="Number of People" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/UserInput2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/Order"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:hint="Item Name" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/UserInput3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/Price"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:hint="Price" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/addList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add to cart" />
+
+                <TextView
+                    android:id="@+id/selected_items_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Selected Items:"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate" />
+
+                <TextView
+                    android:id="@+id/paidprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Price per person :"
+                    android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/CustomBreakdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Breakdown" />
+
+    <Button
+        android:id="@+id/CombinationBreakdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Combination Breakdown" />
+
+    <Button
+        android:id="@+id/Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu" />
+
+    <CheckBox
+        android:id="@+id/Save_Party"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="save" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/studentname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/StudName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:visibility="invisible"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:text="Show Result" />
+</LinearLayout>
+
